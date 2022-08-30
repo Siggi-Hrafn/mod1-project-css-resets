@@ -1,0 +1,79 @@
+:root {
+    box-sizing: border-box;
+}
+
+* ,::after ,::before {
+    margin: 0;
+    padding: 0; 
+}
+
+html {
+    font-size: 62.5%;  /* Setting font to equal 16px font = 1.6rem */
+}
+
+body {
+    font-size: 1.6em; /* this is setting default font-size to 16px baseline */
+    background-color: rgb(229, 229, 229);
+    display: flex;
+    justify-content: center;
+}
+
+/* ============== Classes =====================*/
+
+
+@media screen and (min-width:1366px) {
+
+    .container {
+        height: 100vh;
+        width: 80vw;
+        margin: 0 auto;
+        max-width:1440px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .full-width {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+      }
+
+    
+
+    .container > * {
+        padding: 4rem;
+    }
+
+    .header {
+        height: 16rem;
+        background-color: rgb(37, 37, 37);
+        color: white;
+    }
+
+    .main {
+        /* width: 100%, auto; */
+        min-height: 100rem;
+        /* height: fit-content; */
+        background-color: rgb(193, 193, 193);
+    }
+
+    .footer {
+        height: 16rem;
+        background-color: rgb(62, 62, 62);
+        color: white;
+    }
+}
+
+@media screen and (max-width:1366px) {
+    
+    .container {
+        height: 100vh;
+        width: 95%;
+       /* max-width:1440px; */
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+
